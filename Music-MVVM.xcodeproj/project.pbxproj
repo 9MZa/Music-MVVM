@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120BB0442AE6EAAD004A9956 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120BB0432AE6EAAD004A9956 /* NotificationHandler.swift */; };
 		1261AC6E2AE6AD3600BA2EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC6D2AE6AD3600BA2EE0 /* AppDelegate.swift */; };
 		1261AC702AE6AD3600BA2EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC6F2AE6AD3600BA2EE0 /* SceneDelegate.swift */; };
-		1261AC722AE6AD3600BA2EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC712AE6AD3600BA2EE0 /* ViewController.swift */; };
-		1261AC752AE6AD3600BA2EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1261AC732AE6AD3600BA2EE0 /* Main.storyboard */; };
 		1261AC772AE6AD3700BA2EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1261AC762AE6AD3700BA2EE0 /* Assets.xcassets */; };
 		1261AC7A2AE6AD3700BA2EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1261AC782AE6AD3700BA2EE0 /* LaunchScreen.storyboard */; };
+		1261AC832AE6AE4B00BA2EE0 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC822AE6AE4B00BA2EE0 /* Song.swift */; };
+		1261AC892AE6B33700BA2EE0 /* มักอ้ายหลายเด้อ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1261AC872AE6B33600BA2EE0 /* มักอ้ายหลายเด้อ.mp3 */; };
+		1261AC8A2AE6B33700BA2EE0 /* รถบ่มีน้ำมัน.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1261AC882AE6B33700BA2EE0 /* รถบ่มีน้ำมัน.mp3 */; };
+		1261AC8D2AE6BEAD00BA2EE0 /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC8C2AE6BEAD00BA2EE0 /* SongViewModel.swift */; };
+		1261AC902AE6BF6600BA2EE0 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC8F2AE6BF6600BA2EE0 /* AudioPlayerService.swift */; };
+		1261AC932AE6D47100BA2EE0 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC922AE6D47100BA2EE0 /* MainTabBarViewController.swift */; };
+		1261AC962AE6D4FD00BA2EE0 /* AllSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC952AE6D4FD00BA2EE0 /* AllSongsViewController.swift */; };
+		1261AC982AE6D50800BA2EE0 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC972AE6D50800BA2EE0 /* NowPlayingViewController.swift */; };
+		1261AC9B2AE6D62D00BA2EE0 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC9A2AE6D62D00BA2EE0 /* SongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120BB0432AE6EAAD004A9956 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		1261AC6A2AE6AD3600BA2EE0 /* Music-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1261AC6D2AE6AD3600BA2EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1261AC6F2AE6AD3600BA2EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1261AC712AE6AD3600BA2EE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1261AC742AE6AD3600BA2EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1261AC762AE6AD3700BA2EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1261AC792AE6AD3700BA2EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1261AC7B2AE6AD3700BA2EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1261AC822AE6AE4B00BA2EE0 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		1261AC872AE6B33600BA2EE0 /* มักอ้ายหลายเด้อ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "มักอ้ายหลายเด้อ.mp3"; sourceTree = "<group>"; };
+		1261AC882AE6B33700BA2EE0 /* รถบ่มีน้ำมัน.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "รถบ่มีน้ำมัน.mp3"; sourceTree = "<group>"; };
+		1261AC8C2AE6BEAD00BA2EE0 /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+		1261AC8F2AE6BF6600BA2EE0 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		1261AC922AE6D47100BA2EE0 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		1261AC952AE6D4FD00BA2EE0 /* AllSongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSongsViewController.swift; sourceTree = "<group>"; };
+		1261AC972AE6D50800BA2EE0 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		1261AC9A2AE6D62D00BA2EE0 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,71 @@
 		1261AC6C2AE6AD3600BA2EE0 /* Music-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1261AC992AE6D62100BA2EE0 /* Cell */,
+				1261AC8E2AE6BF5300BA2EE0 /* Service */,
+				1261AC812AE6AE3F00BA2EE0 /* Model */,
+				1261AC842AE6AFC100BA2EE0 /* ViewModel */,
+				1261AC912AE6C1AD00BA2EE0 /* View */,
+				1261AC8B2AE6B33900BA2EE0 /* Song */,
 				1261AC6D2AE6AD3600BA2EE0 /* AppDelegate.swift */,
 				1261AC6F2AE6AD3600BA2EE0 /* SceneDelegate.swift */,
-				1261AC712AE6AD3600BA2EE0 /* ViewController.swift */,
-				1261AC732AE6AD3600BA2EE0 /* Main.storyboard */,
 				1261AC762AE6AD3700BA2EE0 /* Assets.xcassets */,
 				1261AC782AE6AD3700BA2EE0 /* LaunchScreen.storyboard */,
 				1261AC7B2AE6AD3700BA2EE0 /* Info.plist */,
 			);
 			path = "Music-MVVM";
+			sourceTree = "<group>";
+		};
+		1261AC812AE6AE3F00BA2EE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1261AC822AE6AE4B00BA2EE0 /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1261AC842AE6AFC100BA2EE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1261AC8C2AE6BEAD00BA2EE0 /* SongViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1261AC8B2AE6B33900BA2EE0 /* Song */ = {
+			isa = PBXGroup;
+			children = (
+				1261AC872AE6B33600BA2EE0 /* มักอ้ายหลายเด้อ.mp3 */,
+				1261AC882AE6B33700BA2EE0 /* รถบ่มีน้ำมัน.mp3 */,
+			);
+			path = Song;
+			sourceTree = "<group>";
+		};
+		1261AC8E2AE6BF5300BA2EE0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1261AC8F2AE6BF6600BA2EE0 /* AudioPlayerService.swift */,
+				120BB0432AE6EAAD004A9956 /* NotificationHandler.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1261AC912AE6C1AD00BA2EE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1261AC922AE6D47100BA2EE0 /* MainTabBarViewController.swift */,
+				1261AC952AE6D4FD00BA2EE0 /* AllSongsViewController.swift */,
+				1261AC972AE6D50800BA2EE0 /* NowPlayingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1261AC992AE6D62100BA2EE0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1261AC9A2AE6D62D00BA2EE0 /* SongCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1261AC7A2AE6AD3700BA2EE0 /* LaunchScreen.storyboard in Resources */,
+				1261AC892AE6B33700BA2EE0 /* มักอ้ายหลายเด้อ.mp3 in Resources */,
 				1261AC772AE6AD3700BA2EE0 /* Assets.xcassets in Resources */,
-				1261AC752AE6AD3600BA2EE0 /* Main.storyboard in Resources */,
+				1261AC8A2AE6B33700BA2EE0 /* รถบ่มีน้ำมัน.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +211,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1261AC722AE6AD3600BA2EE0 /* ViewController.swift in Sources */,
+				1261AC8D2AE6BEAD00BA2EE0 /* SongViewModel.swift in Sources */,
+				1261AC982AE6D50800BA2EE0 /* NowPlayingViewController.swift in Sources */,
+				1261AC962AE6D4FD00BA2EE0 /* AllSongsViewController.swift in Sources */,
+				1261AC832AE6AE4B00BA2EE0 /* Song.swift in Sources */,
+				1261AC932AE6D47100BA2EE0 /* MainTabBarViewController.swift in Sources */,
+				120BB0442AE6EAAD004A9956 /* NotificationHandler.swift in Sources */,
+				1261AC902AE6BF6600BA2EE0 /* AudioPlayerService.swift in Sources */,
 				1261AC6E2AE6AD3600BA2EE0 /* AppDelegate.swift in Sources */,
+				1261AC9B2AE6D62D00BA2EE0 /* SongCell.swift in Sources */,
 				1261AC702AE6AD3600BA2EE0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +227,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1261AC732AE6AD3600BA2EE0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1261AC742AE6AD3600BA2EE0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1261AC782AE6AD3700BA2EE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -297,9 +369,9 @@
 				INFOPLIST_FILE = "Music-MVVM/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +397,9 @@
 				INFOPLIST_FILE = "Music-MVVM/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
