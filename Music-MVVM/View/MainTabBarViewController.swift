@@ -6,33 +6,28 @@
 //
 
 import UIKit
+import Combine
 
 class MainTabBarViewController: UITabBarController {
     var miniPlayerView: UIView!
     var miniPlayerTitleLabel: UILabel!
-    let notificationHandler = NotificationHandler.shared
+    private var cancellables: Set<AnyCancellable> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMiniPlayer()
         setupViewControllers()
         observeSongChange()
-        
     }
     
     func setupMiniPlayer() {
         // Create the mini player view and add it above the tab bar.
-        miniPlayerView = UIView(frame: CGRect(x: 0, y: tabBar.frame.origin.y - 60, width: view.frame.width, height: 60))
+        miniPlayerView = UIView(frame: CGRect(x: 0, y: tabBar.frame.origin.y - 120, width: view.frame.width, height: 60))
         miniPlayerView.backgroundColor = .lightGray
         
         miniPlayerTitleLabel = UILabel(frame: miniPlayerView.bounds)
         miniPlayerTitleLabel.textAlignment = .center
         
-        if let now = AudioPlayerService.shared.currentSong() {
-            miniPlayerTitleLabel.text = now.title
-        } else {
-            miniPlayerTitleLabel.text = "No Song Playing"
-        }
         miniPlayerView.addSubview(miniPlayerTitleLabel)
         
         // Add the mini player view above the tab bar.
@@ -53,16 +48,18 @@ class MainTabBarViewController: UITabBarController {
     }
     
     func observeSongChange() {
-        notificationHandler.observeSongChangeNotification { [weak self] song in
-            if let song = song {
-                self?.miniPlayerTitleLabel.text = song.title
-            } else {
-                self?.miniPlayerTitleLabel.text = "No Song Playing"
-            }
-        }
+        AudioPlayerService.shared.currentSongPublisher
+            .sink(receiveValue: { [weak self] song in
+                if let song = song {
+                    self?.miniPlayerTitleLabel.text = "กำลังเล่น \(song.title)"
+                } else {
+                    self?.miniPlayerTitleLabel.text = "No Song Playing"
+                }
+            })
+            .store(in: &cancellables)
     }
     
     deinit {
-        notificationHandler.removeSongChangeObserver()
+        cancellables.forEach { $0.cancel() }
     }
 }

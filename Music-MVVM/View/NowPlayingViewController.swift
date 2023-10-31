@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import Combine
 
 class NowPlayingViewController: UIViewController {
     var titleLabel = UILabel()
-    let notificationHandler = NotificationHandler.shared
+    private var cancellables: Set<AnyCancellable> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +22,8 @@ class NowPlayingViewController: UIViewController {
     }
     
     func setupUI() {
-        
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(titleLabel)
-        
-        if let now = AudioPlayerService.shared.currentSong() {
-            titleLabel.text = now.title
-        } else {
-            titleLabel.text = "No Song Playing"
-        }
         
         NSLayoutConstraint.activate([
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -38,17 +32,19 @@ class NowPlayingViewController: UIViewController {
     }
 
     func observeSongChange() {
-        notificationHandler.observeSongChangeNotification { [weak self] song in
-            if let song = song {
-                self?.titleLabel.text = song.title
-            } else {
-                self?.titleLabel.text = "No Song Playing"
-            }
-        }
-    }
-    
-    deinit {
-        notificationHandler.removeSongChangeObserver()
-    }
+           AudioPlayerService.shared.currentSongPublisher
+               .sink(receiveValue: { [weak self] song in
+                   if let song = song {
+                       self?.titleLabel.text = "กำลังเล่น \(song.title)"
+                   } else {
+                       self?.titleLabel.text = "No Song Playing"
+                   }
+               })
+               .store(in: &cancellables)
+       }
+
+       deinit {
+           cancellables.forEach { $0.cancel() }
+       }
     
 }

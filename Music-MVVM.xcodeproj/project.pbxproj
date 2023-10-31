@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		120BB0442AE6EAAD004A9956 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120BB0432AE6EAAD004A9956 /* NotificationHandler.swift */; };
 		1261AC6E2AE6AD3600BA2EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC6D2AE6AD3600BA2EE0 /* AppDelegate.swift */; };
 		1261AC702AE6AD3600BA2EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261AC6F2AE6AD3600BA2EE0 /* SceneDelegate.swift */; };
 		1261AC772AE6AD3700BA2EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1261AC762AE6AD3700BA2EE0 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		120BB0432AE6EAAD004A9956 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		1261AC6A2AE6AD3600BA2EE0 /* Music-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1261AC6D2AE6AD3600BA2EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1261AC6F2AE6AD3600BA2EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				1261AC8F2AE6BF6600BA2EE0 /* AudioPlayerService.swift */,
-				120BB0432AE6EAAD004A9956 /* NotificationHandler.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -216,7 +213,6 @@
 				1261AC962AE6D4FD00BA2EE0 /* AllSongsViewController.swift in Sources */,
 				1261AC832AE6AE4B00BA2EE0 /* Song.swift in Sources */,
 				1261AC932AE6D47100BA2EE0 /* MainTabBarViewController.swift in Sources */,
-				120BB0442AE6EAAD004A9956 /* NotificationHandler.swift in Sources */,
 				1261AC902AE6BF6600BA2EE0 /* AudioPlayerService.swift in Sources */,
 				1261AC6E2AE6AD3600BA2EE0 /* AppDelegate.swift in Sources */,
 				1261AC9B2AE6D62D00BA2EE0 /* SongCell.swift in Sources */,

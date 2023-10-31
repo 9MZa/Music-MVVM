@@ -7,15 +7,20 @@
 
 import Foundation
 import AVFoundation
+import Combine
 
 class AudioPlayerService {
     static let shared = AudioPlayerService()
     
     private var audioPlayer: AVAudioPlayer?
-    private var current: Song?
+    @Published private var current: Song?
     
     func play() {
         audioPlayer?.play()
+    }
+    
+    var currentSongPublisher: AnyPublisher<Song?, Never> {
+        return $current.eraseToAnyPublisher()
     }
     
     func setCurrentSong(_ song: Song) {
@@ -37,11 +42,6 @@ class AudioPlayerService {
     func stop() {
         audioPlayer?.stop()
     }
-    
-    func currentSong() -> Song? {
-        return current
-    }
-    
     
     func isPlaying() -> Bool {
         return false
